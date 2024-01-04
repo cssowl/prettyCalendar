@@ -77,6 +77,11 @@ header .icons span:hover {
     color: lightskyblue;
 }
 
+.month {
+    color: lightskyblue;
+    font-size: 1.5rem;
+}
+
 .calendar {
     padding: 20px;
 }
