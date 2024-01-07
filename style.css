@@ -1,8 +1,21 @@
+:root {
+    --font: 'Poiret One', sans-serif;
+    --background-color: lightskyblue;
+    --title-color: #444;
+    --white: snow;
+    --blue: lightskyblue;
+    --shadow: darkgray;
+    --gray: #aaa;
+    --gray2: gray;
+    --light: lightgray;
+    --dark: black;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poiret One', sans-serif;
+    font-family: var(--font);
 }
 
 body {
@@ -10,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: lightskyblue;
+    background: var(--background-color);
     font-size: 16px;
 }
 
@@ -19,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    color: #444;
+    color: var(--title);
     width: 50px;
 }
 
@@ -39,10 +52,10 @@ body {
   }
 
 .wrapper {
-    background: snow;
+    background: var(--white);
     width: 450px;
     border-radius: 10px;
-    box-shadow: 0 0 10px 1px darkgray;
+    box-shadow: 0 0 10px 1px var(--shadow);
 }
 
 .wrapper header {
@@ -60,12 +73,12 @@ header .currentdate {
 header .icons span {
     height: 28px;
     width: 28px;
-    background: snow;
+    background: var(--white);
     margin: 0 1px;
     text-align: center;
     line-height: 28px;
     cursor: pointer;
-    color: gray;
+    color: var(--gray2);
     font-size: 1rem;
 }
 
@@ -74,11 +87,11 @@ header .icons span:last-child {
 }
 
 header .icons span:hover {
-    color: lightskyblue;
+    color: var(--blue);
 }
 
 .month {
-    color: lightskyblue;
+    color: var(--blue);
     font-size: 1.5rem;
 }
 
@@ -113,11 +126,11 @@ header .icons span:hover {
 }
 
 .days li.inactive {
-    color: #aaa;
+    color: var(--gray);
 }
 
 .days li.active {
-    color: black;
+    color: var(--dark);
 }
 
 .calendar .days li::before {
@@ -133,9 +146,9 @@ header .icons span:hover {
 }
 
 .days li:hover::before {
-    background: lightgray;
+    background: var(--light);
 }
 
 .days li.active::before {
-    background: lightskyblue;
+    background: var(--background-color);
 }
