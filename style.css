@@ -120,7 +120,7 @@ header .icons span:hover {
 }
 
 .calendar .days li {
-    margin-top: 30px;
+    margin-top: 25px;
     cursor: pointer;
     z-index: 1;
 }
